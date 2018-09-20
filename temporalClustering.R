@@ -542,12 +542,12 @@ randomTest <- function(){
 }
 
 shankarappaTest <- function(){
-  tree <- read.tree("set1_Shankarappa.tree")
-  timetable <- "set1_Shankarappa.txt"
+  tree <- read.tree("Shankarappa.tree")
+  timetable <- "Shankarappa.txt"
   fdata <- formatData(timetable, tree)
   data <- fdata$data
   tree <- prepTree(tree, tip.date = data$timeNum)
-  modelCharacterEvolution(tree = tree, timetable = "set1_Shankarappa.txt", 
+  modelCharacterEvolution(tree = tree, timetable = "Shankarappa.txt", 
                         treefile = "set1", boot=200, parsimony = T)
 }
 

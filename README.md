@@ -57,7 +57,7 @@ fink install gsl # Fink
 
 ```R
 source("temporalClustering.R")
-temporalClustering("file.tree", "timetable.txt")
+temporalClustering("Shankarappa.tree", "Shankarappa.txt")
 ```
 
 Main function (with defaults):
@@ -65,6 +65,8 @@ Main function (with defaults):
 ```R
 temporalClustering(tree_file, timetable_file, parsimony=FALSE , bootstrap=200 , output="TC" , randomMulti2Di=TRUE )
 ```
+
+The Shankarappa files were originally produced in Norström *et al.* 2012 (see [references](https://github.com/ProsperiLab/PhyloTempo#references)).
 
 ## Output
 
